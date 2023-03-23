@@ -143,3 +143,13 @@ section a:hover {
   transform: rotateY( 180deg );
 }
 
+.footer2 {
+
+  position: absolute;
+  left: 0px;
+  top: 1000px;
+  width: 1348px;
+  height: 200px;
+  background-color: rgba(0, 220, 240);
+}
+
