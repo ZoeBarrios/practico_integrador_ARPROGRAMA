@@ -1,0 +1,20 @@
+header{
+    font-family: 'Roboto', sans-serif;}
+
+.bg-blue{
+    background-color: #80ced6;
+}
+
+.navbar{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+.navbar-nav li:hover {
+    border-radius: 10px;
+    background-color: #fefbd8; 
+}
+
+  
+.navbar-nav li:hover a {
+    color: #000000; 
+}
