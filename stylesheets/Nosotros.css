@@ -130,5 +130,14 @@ section a:hover {
   transform: rotateY( 180deg );
 }
 
+#footer{
+
+  position: absolute;
+  left: 0px;
+  top: 1000px;
+  width: 1348px;
+  height: 0px;
+}
+
 
 
