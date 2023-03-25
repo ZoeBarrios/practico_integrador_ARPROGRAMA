@@ -18,3 +18,7 @@ header{
 .navbar-nav li:hover a {
     color: #000000; 
 }
+
+.navbar-brand img {
+    max-height: 50px;
+}
