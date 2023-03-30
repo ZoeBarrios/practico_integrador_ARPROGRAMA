@@ -71,12 +71,13 @@ section a:hover {
 
 .links-list1 {
 
+  gap: 10rem;
   display: flex;
   justify-content: space-evenly;
 }
 
 .links-list2 {
-
+  gap: 10rem;
   display: flex;
   justify-content: space-evenly;
   padding-top: 340px;
@@ -129,6 +130,8 @@ section a:hover {
   color: white;
   transform: rotateY( 180deg );
 }
+
+
 
 #footer{
 
