@@ -71,13 +71,16 @@ btn_adelante2.addEventListener("click", function(e){
     var aux = nombre + ", " + apellido1;
     newUser = aux.toUpperCase();
 
+   
+
   }
 
   function verificarNombre($n){
     var ExpRegular_Nombre = /^[A-Za-zÑñÁÉÍÓÚáéíóúüÜ]+((?:[\s{1}][A-Za-zÑñÁÉÍÓÚáéíóúüÜ]+)+)?$/;
     return ExpRegular_Nombre.test($n);
   }
-
+  localStorage.setItem('nombre', nombre);
+  localStorage.setItem('apellido', apellido1);
 });
 
 btn_adelante3.addEventListener("click", function(e){
@@ -125,6 +128,9 @@ btn_adelante3.addEventListener("click", function(e){
     cont += 1;
 
   }
+
+  localStorage.setItem('fechaNac', fechaNac);
+  localStorage.setItem('sexo', sexo);
 
 });
 
