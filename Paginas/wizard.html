@@ -10,6 +10,11 @@
     <title>Formulario-tc</title>
 </head>
 <body>
+    <script>
+        if(localStorage.getItem('nombre')){
+        window.location.href = "../Paginas/CrearTarjeta.html";
+    }
+    </script>
     <div class="container">
         <header>Registro de Datos</header>
         <!--barra de progreso-->
@@ -116,6 +121,8 @@
       event.preventDefault();
       window.location.href = "../Paginas/CrearTarjeta.html";
     }
+
+    
 </script>
   
 

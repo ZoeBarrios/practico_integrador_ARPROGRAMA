@@ -130,7 +130,7 @@ btn_adelante3.addEventListener("click", function(e){
   }
 
   localStorage.setItem('fechaNac', fechaNac);
-  localStorage.setItem('sexo', sexo);
+  localStorage.setItem('sexo', sexo.innerText);
 
 });
 
