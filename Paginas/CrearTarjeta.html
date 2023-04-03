@@ -7,6 +7,7 @@
     <link href="../stylesheets/navbar.css" rel="stylesheet" />
     <link rel="stylesheet" href="../stylesheets/CrearTarjeta.css" />
     <link rel="stylesheet" href="../stylesheets/Background.css" />
+    
     <title>Crea tu tarjeta</title>
 </head>
 <body>
@@ -17,7 +18,7 @@
           <div class="card-body">
             <img class="card-img-top mx-auto d-block" src="../img/logo_low.png" alt="Logo tarjeta de crédito" style="max-width: 100px;">
             <h5 class="card-title text-center mt-3">XXXX-XXXX-XXXX-XXXX</h5>
-            <p class="card-text text-center">Tu nombre</p>
+            <p class="card-text text-center" id="nombreCompleto">Tu nombre</p>
           </div>
         </div>
         <button class="mb-5 btn btn-info">Exportar datos a pdf</button>
@@ -25,8 +26,9 @@
       
     </div>
   <div id="footer"></div>
-
-  <script src="../Componentes/javascript/cargarNavFoo.js" />
+  <script src="/Paginas/javascript/cargarDatos.js"></script>
+  <script src="../Componentes/javascript/cargarNavFoo.js"></script>
+  
     
 </body>
 </html>
