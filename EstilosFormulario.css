@@ -1,0 +1,235 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    font-family: serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwcHBwgHBwgHBwcHBw0HBwcHBw8ICQcNFREWFhURExMYHSggGCYlGx8fITEhJSkrLi4uFx8zODMsNygtLisBCgoKDQ0NDg0NDysZFRkrNys3Ky0rKzcrKy0tKystKy0rKys3KystLSsrKysrKy0rLSsrKysrKysrKysrKy0rLf/AABEIALcBEwMBIgACEQEDEQH/xAAaAAEBAQEBAQEAAAAAAAAAAAABAgAFBgQD/8QAFhABAQEAAAAAAAAAAAAAAAAAAAER/8QAGgEBAQEAAwEAAAAAAAAAAAAAAQACAwQFBv/EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAwDAQACEQMRAD8A9PIZDIZHQfQthkbFSAtIqQSKkCMhjQxlaYY0VAGioIYEqLiYqFmqiomKjTFXFRMVCzVxURFRqMVcVERUaYq4qVEqpSzYuU6jTp1nF6NTralhtTaLRajI1qLWtTam5GtRabUWhuQaw0BpxZDI2KkYcwwyHDgLRUgkVAmipGhjKaKjGBNDGKRioIqIUxUEMLFXFREVGmaqKiYqNSs1UVEQynWauVUqNOtM4vW1GnUMVranRpWKtTaNFqMjWpta1Fqbka1NrWotDcjaUawOOZIcMhkYbbDjYcC1oY0ioC0MaKgDQxoYExYhMqAwIxUTFRpmqiomGFlUVEFoLh1JOsq06jTrWjFa2p1tKxWtqdGpYrU2i0WoyNam1rU2pqQWpta1NqbkbWToTWPlkMjSGRxMthw4cGrQYcOI6xYhMWITFiEzMUmioGi0KhghaBIY6FFJOhWtqW1rRitbU62lYrRqda1acOptGi0nDam0WptWtSNam1rUWpuRtKNZa1iJDjSKjicAw4ZDgWjCcOI6IWwhMWITFmSYswTMWRYhjqUwY6FMGIVraltOo62p1ta1YdGjRqOG0WjRaWpGtTa1qbU1I1qLTai1NSNrJ1k1j9JFY0hcbqNhxsVg0jGOHAtGE42JazHGCZiyTMWRDFkgxCLMzIlksdR1g2tasOjRo1acOjRo06cNotFqbTpkNqbWtTatakFqbWtTam5G1ksWn1yKxoqRxugMOGQ4FoZWNgQJxsS0YSyIYskCzJBiyIZmRDMyIZgiwZiRraySTqdaipprU2tRSRaK1TS1GqaailpmDEuhIrGkVI4XnCQ4cOJDCcOBBsVjYEMGKxkU4ysY6ksWRALEgEIhiEQCEQDQSKGFLQopqaS1TTU0tCppqaWhU01NJYMxLrQxoqR13nNDGkVIECcOBJw4cOJJxsVjYkjGVjYijGVgJSFAkA0EgFKLUVqCQDRU0KmmikippopaFTTU0tCppqa0RU01NLQKWJduKjRUdV5rSHGipAGw42HAhhw42JDBisZJIVgxFOCqFJSmrqaSmiqqTGhU1VTSQKamloUU0UkVNNTS0KKamloVNNTSRU01NaaFTTUUtMwZrC9BFQRUdJ5hhkaKgDSHDCEMbFY2AJxsU2IowKsFKTU1dTS0mpqqKSmpqqmlpNFVUNEVNVU0tCpqqmmNJqaqppIqaamtNCppqaWhU01NJFRVVNajQYMU9HFxmdJ5qoqMzNSoZCwBxsZgGwFkU1NZik0VmLSamszRTU1mLUFRWZowJrMY1E0VmLSamsxKamszTSamsxaTU1maKKmszRAZkX//2Q==);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*contenedor*/
+.container{
+    width: 350px;
+    background-color: white;
+    border-radius: 7px;
+    text-align: center;
+    padding: 30px 35px 0px 35px;
+}
+
+.container header{
+    font-size: 28px;
+    font-weight: 600px;
+    margin: 0px 0px 30px 0px;
+}
+
+/*formulario*/
+.container .form-princ{
+    width: 100%;
+    overflow: hidden;
+}
+
+.form-princ form{
+    display: flex;
+    width: 300%;
+}
+
+.form-princ form .pagina{
+    width: 40%;
+    transition: margin-left 0.5s ease-in-out;
+}
+
+.form-princ form .pagina .titulo{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500px;
+}
+
+.form-princ form .pagina .campo{
+    height: 35px;
+    width: 350px;
+    margin: 40px 0px;
+    display: flex;
+    position: relative;
+}
+
+/*editando componentes del form*/
+.form-princ form .pagina .campo .label{
+    position: absolute;
+    top: -25px;
+    font-weight: 500px;
+    font-size: 14px;
+    font-style: italic;
+    float: left;
+    text-align: left;
+    width:100%;
+}
+
+.form-princ form .pagina .campo input{
+    width: 100%;
+    height: 100%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-size: 16px;
+    padding-left: 15px;
+}
+
+.form-princ form .pagina .campo select{
+    width: 100%;
+    padding-left: 10px;
+    font-weight: 500px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+.form-princ form .pagina .campo button{
+    width: 100%;
+    height: calc(100% + 5px);
+    margin-top: -20px;
+    border: none;
+    background:orange;
+    border-radius: 7px;
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: 500px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.form-princ form .pagina .campo button:hover{
+    background: rgb(248, 191, 84);
+}
+
+/*botones de pag 2 y 3*/
+.form-princ form .pagina .btns button{
+    margin-top: -20px !important;
+}
+
+/*boton volver y siguiente*/
+form .pagina .btns button.volver{
+    margin-right: 3px;
+    font-size: 17px;
+}
+
+form .pagina .btns button.adelante{
+    margin-left: 3px;
+}
+
+/*Barra de progreso*/
+.container .progress-bar{
+    display: flex;
+    margin: 40px 0px;
+
+}
+
+.container .progress-bar .paso{
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.progress-bar .paso p{
+    font-size: 18px;
+    font-weight: 500px;
+    color: black;
+    margin-bottom: 9px;
+}
+
+.progress-bar .paso p.active{
+    color:  rgb(248, 191, 84);
+}
+
+.progress-bar .paso .num{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    font-weight: 500px;
+    font-size: 17px;
+    line-height: 25px;
+    transition: 0.2s;
+}
+
+.progress-bar .paso .num.num.active{
+    border-color:   rgb(248, 191, 84);
+    background:  rgb(248, 191, 84);
+}
+
+.progress-bar .paso .num span{
+    font-weight: 500px;
+    font-size: 17px;
+    line-height: 25px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.progress-bar .paso .num.active span{
+    display: none;
+}
+
+.progress-bar .paso .check{
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    font-size: 15px;
+    transform: translate(-50%,-50%);
+}
+
+.progress-bar .paso .check.active{
+    display: block;
+    color: black;
+}
+
+.progress-bar .paso .num::before,
+.progress-bar .paso .num::after{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 2px;
+    bottom: 11px;
+    right: -70px;
+    background: black;
+}
+
+.progress-bar .paso:last-child .num::before,
+.progress-bar .paso:last-child .num::after{
+    display: none;
+}
+
+/*animacion de progress bar*/
+.progress-bar .paso .num.active:after{
+    background-color: orange;
+    animation: mov_Linea 0.3s linear forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+@keyframes mov_Linea{
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+
+/*Error de espacio vacío*/
+
+.error{
+    color: red;
+    float: right;
+    text-align: right;
+}
