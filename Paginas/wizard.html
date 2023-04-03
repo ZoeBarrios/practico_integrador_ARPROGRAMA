@@ -104,23 +104,54 @@
                     <!--CAMPO 3 BOTON / atras,siguiente-->
                     <div class="campo btns">
                         <button class="volver-pag2 volver">Atrás</button>
-                        <button class="fin  adelante" onclick="redireccionar(event)">Enviar</button>
+                        <button class="fin adelante" data-bs-toggle="modal">Enviar</button>
                         
                     </div>
                 </div>
             </form>
         </div>
     </div>
+    <div id="modal-confirmacion" class="modal">
+        <div class="modal-contenido">
+          <h3>¿Está seguro de que los datos son correctos?</h3>
+          <p>Por favor, revise la información antes de enviarla.</p>
+          <div class="modal-botones">
+            <button id="modal-btn-si">Sí</button>
+            <button id="modal-btn-no">No</button>
+          </div>
+        </div>
+      </div>
     <script src="./javascript/Movimiento.js"></script>
   
 </body>
 </html>
 
-<script>
-    function redireccionar(event) {
-      event.preventDefault();
-      window.location.href = "../Paginas/CrearTarjeta.html";
-    }
+<script defer>
+  
+    document.querySelector('.fin').addEventListener('click', function(event) {
+        event.preventDefault();
+        const nombre=localStorage.getItem('nombre')
+        const apellido=localStorage.getItem('apellido')
+        const sexo=localStorage.getItem('sexo')==1?"Masculino":"Femenino"
+        const fNact=localStorage.getItem('fechaNac')
+        Swal.fire({
+        title: '¿Está seguro de que los datos son correctos?',
+        text: `Nombre:${nombre}
+        Apellido:${apellido}
+        Sexo:${sexo}
+        Fecha de nacimiento:${fNact}`,
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonText: 'Sí',
+        cancelButtonText: 'No'
+        }).then((result) => {
+            if (result.isConfirmed) {
+            window.location.href = "../Paginas/CrearTarjeta.html";
+        }
+});
+    });
+
+
 
     
 </script>
