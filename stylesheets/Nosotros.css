@@ -126,6 +126,7 @@ section a:hover {
 }
 
 .back {
+  font-size: 3rem;
   background: #03446A;
   color: white;
   transform: rotateY( 180deg );
