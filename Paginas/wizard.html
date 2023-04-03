@@ -38,7 +38,7 @@
         </div>
 
         <div class="form-princ">
-            <form action="#">
+            <form action="#" >
 
                 <!--PAGINA NUMERO 1-->
                 <div class="pagina movPag">
@@ -99,12 +99,23 @@
                     <!--CAMPO 3 BOTON / atras,siguiente-->
                     <div class="campo btns">
                         <button class="volver-pag2 volver">Atrás</button>
-                        <button class="fin  adelante">Enviar</button>
+                        <button class="fin  adelante" onclick="redireccionar(event)">Enviar</button>
+                        
                     </div>
                 </div>
             </form>
         </div>
     </div>
     <script src="./javascript/Movimiento.js"></script>
+  
 </body>
 </html>
+
+<script>
+    function redireccionar(event) {
+      event.preventDefault();
+      window.location.href = "../Paginas/CrearTarjeta.html";
+    }
+</script>
+  
+
