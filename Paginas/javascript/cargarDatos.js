@@ -7,14 +7,5 @@ nombreCompleto.textContent=nombre+" "+apellido
 
 
 
-$.ajax({
-    url: 'datos.php',
-    type: 'GET',
-    success: function(response) {
-      console.log(response);
-    },
-    error: function(xhr, status, error) {
-      console.error(error);
-    }
-});
+
   
