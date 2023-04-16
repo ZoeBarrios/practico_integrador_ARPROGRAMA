@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../stylesheets/EstilosFormulario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://kit.fontawesome.com/e0f34b8123.js" crossorigin="anonymous"></script>
     <title>Formulario-tc</title>
@@ -50,17 +53,23 @@
                     <div class="titulo">Información general</div>
                     <!--CAMPO 1-->
                     <div class="campo">
-                        <div class="label">Nombres: <b class="error" id="nombres-error"></b></div>
+                        <div class="label">Nombres :<b class="error" id="nombres-error"></b></div>
                         <input type="text" id="nombres" placeholder="Nombres">
                     </div>
                     <!--CAMPO 2-->
                     <div class="campo">
-                        <div class="label">Apellidos: <b class="error" id="apellido-error"></b></div>
+                        <div class="label">Apellidos :<b class="error" id="apellido-error"></b></div>
                         <input type="text" id="apellido" placeholder="Apellidos">
                     </div>
                     <!--CAMPO 3 BOTON-->
                     <div class="campo sigPag">
-                        <button>Siguiente</button>
+                        <button class="btn-neon">
+                            <span id="span1"></span>
+                            <span id="span2"></span>
+                            <span id="span3"></span>
+                            <span id="span4"></span>
+                            Siguiente
+                        </button>
                     </div>
                 </div>
 
@@ -83,8 +92,18 @@
                     </div>
                     <!--CAMPO 3 BOTON / atras,siguiente-->
                     <div class="campo btns">
-                        <button class="volver-pag1 volver">Atrás</button>
-                        <button class="adelante-pag3 adelante">Siguiente</button>
+                        <button class="volver-pag1 volver btn-neon">Atrás
+                            <span id="span1"></span>
+                            <span id="span2"></span>
+                            <span id="span3"></span>
+                            <span id="span4"></span>
+                        </button>
+                        <button class="adelante-pag3 adelante btn-neon">Siguiente
+                            <span id="span1"></span>
+                            <span id="span2"></span>
+                            <span id="span3"></span>
+                            <span id="span4"></span>
+                        </button>
                     </div>
                 </div>
 
@@ -102,9 +121,19 @@
                         <input type="text" id="numCel" placeholder="Número Telefónico">
                     </div>
                     <!--CAMPO 3 BOTON / atras,siguiente-->
-                    <div class="campo btns">
-                        <button class="volver-pag2 volver">Atrás</button>
-                        <button class="fin adelante" data-bs-toggle="modal">Enviar</button>
+                    <div class="campo btns campo1">
+                        <button class="volver-pag2 volver btn-neon atras2">Atrás
+                            <span id="span1"></span>
+                            <span id="span2"></span>
+                            <span id="span3"></span>
+                            <span id="span4"></span>
+                        </button>
+                        <button class="fin adelante btn-neon adelante2" data-bs-toggle="modal">Enviar
+                            <span id="span1"></span>
+                            <span id="span2"></span>
+                            <span id="span3"></span>
+                            <span id="span4"></span>
+                        </button>
                         
                     </div>
                 </div>
@@ -113,21 +142,23 @@
     </div>
     <div id="modal-confirmacion" class="modal">
         <div class="modal-contenido">
-          <h3>¿Está seguro de que los datos son correctos?</h3>
-          <p>Por favor, revise la información antes de enviarla.</p>
-          <div class="modal-botones">
-            <button id="modal-btn-si">Sí</button>
-            <button id="modal-btn-no">No</button>
-          </div>
+            <h3>¿Está seguro de que los datos son correctos?</h3>
+                <p>Por favor, revise la información antes de enviarla.</p>
+            <div class="modal-botones">
+                <button id="modal-btn-si">Sí</button>
+                <button id="modal-btn-no">No</button>
+            </div>
         </div>
-      </div>
+    </div>
+    
     <script src="./javascript/Movimiento.js"></script>
-  
+
 </body>
 </html>
 
-<script defer>
-  
+
+
+    <script defer>
     document.querySelector('.fin').addEventListener('click', function(event) {
         event.preventDefault();
         const nombre=localStorage.getItem('nombre')
@@ -149,11 +180,7 @@
             window.location.href = "../Paginas/CrearTarjeta.html";
         }
 });
-    });
+});
 
-
-
-    
 </script>
-  
 

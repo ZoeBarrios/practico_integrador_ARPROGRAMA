@@ -2,7 +2,6 @@
     margin: 0px;
     padding: 0px;
     outline: none;
-    font-family: serif;
 }
 
 body{
@@ -10,7 +9,7 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwcHBwgHBwgHBwcHBw0HBwcHBw8ICQcNFREWFhURExMYHSggGCYlGx8fITEhJSkrLi4uFx8zODMsNygtLisBCgoKDQ0NDg0NDysZFRkrNys3Ky0rKzcrKy0tKystKy0rKys3KystLSsrKysrKy0rLSsrKysrKysrKysrKy0rLf/AABEIALcBEwMBIgACEQEDEQH/xAAaAAEBAQEBAQEAAAAAAAAAAAABAgAFBgQD/8QAFhABAQEAAAAAAAAAAAAAAAAAAAER/8QAGgEBAQEAAwEAAAAAAAAAAAAAAQACAwQFBv/EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAwDAQACEQMRAD8A9PIZDIZHQfQthkbFSAtIqQSKkCMhjQxlaYY0VAGioIYEqLiYqFmqiomKjTFXFRMVCzVxURFRqMVcVERUaYq4qVEqpSzYuU6jTp1nF6NTralhtTaLRajI1qLWtTam5GtRabUWhuQaw0BpxZDI2KkYcwwyHDgLRUgkVAmipGhjKaKjGBNDGKRioIqIUxUEMLFXFREVGmaqKiYqNSs1UVEQynWauVUqNOtM4vW1GnUMVranRpWKtTaNFqMjWpta1Fqbka1NrWotDcjaUawOOZIcMhkYbbDjYcC1oY0ioC0MaKgDQxoYExYhMqAwIxUTFRpmqiomGFlUVEFoLh1JOsq06jTrWjFa2p1tKxWtqdGpYrU2i0WoyNam1rU2pqQWpta1NqbkbWToTWPlkMjSGRxMthw4cGrQYcOI6xYhMWITFiEzMUmioGi0KhghaBIY6FFJOhWtqW1rRitbU62lYrRqda1acOptGi0nDam0WptWtSNam1rUWpuRtKNZa1iJDjSKjicAw4ZDgWjCcOI6IWwhMWITFmSYswTMWRYhjqUwY6FMGIVraltOo62p1ta1YdGjRqOG0WjRaWpGtTa1qbU1I1qLTai1NSNrJ1k1j9JFY0hcbqNhxsVg0jGOHAtGE42JazHGCZiyTMWRDFkgxCLMzIlksdR1g2tasOjRo1acOjRo06cNotFqbTpkNqbWtTatakFqbWtTam5G1ksWn1yKxoqRxugMOGQ4FoZWNgQJxsS0YSyIYskCzJBiyIZmRDMyIZgiwZiRraySTqdaipprU2tRSRaK1TS1GqaailpmDEuhIrGkVI4XnCQ4cOJDCcOBBsVjYEMGKxkU4ysY6ksWRALEgEIhiEQCEQDQSKGFLQopqaS1TTU0tCppqaWhU01NJYMxLrQxoqR13nNDGkVIECcOBJw4cOJJxsVjYkjGVjYijGVgJSFAkA0EgFKLUVqCQDRU0KmmikippopaFTTU0tCppqa0RU01NLQKWJduKjRUdV5rSHGipAGw42HAhhw42JDBisZJIVgxFOCqFJSmrqaSmiqqTGhU1VTSQKamloUU0UkVNNTS0KKamloVNNTSRU01NaaFTTUUtMwZrC9BFQRUdJ5hhkaKgDSHDCEMbFY2AJxsU2IowKsFKTU1dTS0mpqqKSmpqqmlpNFVUNEVNVU0tCpqqmmNJqaqppIqaamtNCppqaWhU01NJFRVVNajQYMU9HFxmdJ5qoqMzNSoZCwBxsZgGwFkU1NZik0VmLSamszRTU1mLUFRWZowJrMY1E0VmLSamsxKamszTSamsxaTU1maKKmszRAZkX//2Q==);
+    background: url(https://cdn.photoroom.com/v1/assets-cached.jpg?path=backgrounds_v3/black/Photoroom_black_background_extremely_fine_texture_only_black_co_bc8c725e-7ec8-4d6b-b024-98be7544d757.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -18,17 +17,20 @@ body{
 
 /*contenedor*/
 .container{
-    width: 350px;
+    width: 380px;
+    height: 500px;
     background-color: white;
     border-radius: 7px;
     text-align: center;
-    padding: 30px 35px 0px 35px;
+    padding: 35px 35px 0px 35px;
+    opacity: 0.95;
 }
+
 
 .container header{
     font-size: 28px;
     font-weight: 600px;
-    margin: 0px 0px 30px 0px;
+    margin: 0px 0px 40px 0px;
 }
 
 /*formulario*/
@@ -45,12 +47,14 @@ body{
 .form-princ form .pagina{
     width: 40%;
     transition: margin-left 0.5s ease-in-out;
+    padding-left: 10px;
 }
 
 .form-princ form .pagina .titulo{
     text-align: left;
     font-size: 20px;
     font-weight: 500px;
+    margin-bottom: 70px;
 }
 
 .form-princ form .pagina .campo{
@@ -65,9 +69,9 @@ body{
 .form-princ form .pagina .campo .label{
     position: absolute;
     top: -25px;
-    font-weight: 500px;
+    font-family: 'Karla', sans-serif;
+    color: black;
     font-size: 14px;
-    font-style: italic;
     float: left;
     text-align: left;
     width:100%;
@@ -91,24 +95,92 @@ body{
     border: 1px solid lightgray;
 }
 
-.form-princ form .pagina .campo button{
-    width: 100%;
-    height: calc(100% + 5px);
-    margin-top: -20px;
-    border: none;
-    background:orange;
-    border-radius: 7px;
-    color: whitesmoke;
-    font-size: 18px;
-    font-weight: 500px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: 0.3s ease;
+.btns{
+    padding-top: 15px;
 }
 
-.form-princ form .pagina .campo button:hover{
-    background: rgb(248, 191, 84);
+/*neon botton*/
+.btn-neon{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    letter-spacing: 5px;
+    font-size: 24px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.25;
+    font-size: 15px;
+    border-radius: 3px;
+    background: linear-gradient(black,rgb(44, 43, 43));
+}
+
+.btn-neon:hover{
+    background: linear-gradient(black,rgb(44, 43, 43));
+    box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px  rgb(8, 197, 245), 0 0 10px rgb(0, 202, 252);
+    transition-delay: 1s;
+    border: 1px solid whitesmoke;
+}
+
+.btn-neon span{
+    position: absolute;
+    display: block;
+}
+
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,rgb(16, 167, 227));
+}
+
+.btn-neon:hover  #span1{
+    left: 100%;
+    transition: 0.5s;
+}
+
+#span3{
+    bottom: 0%;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,rgb(16, 167, 227));
+}
+
+.btn-neon:hover  #span3{
+    right: 100%;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+#span2{
+    top: -100%;
+    right: 0%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,rgb(16, 167, 227));
+}
+
+.btn-neon:hover  #span2{
+    top: 100%;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+}
+
+#span4{
+    bottom: -100%;
+    left: 0%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,rgb(16, 167, 227));
+}
+
+.btn-neon:hover  #span4{
+    bottom: 100%;
+    transition: 0.5s;
+    transition-delay: 0.75s;
 }
 
 /*botones de pag 2 y 3*/
@@ -147,7 +219,7 @@ form .pagina .btns button.adelante{
 }
 
 .progress-bar .paso p.active{
-    color:  rgb(248, 191, 84);
+    color: rgb(16, 167, 227);
 }
 
 .progress-bar .paso .num{
@@ -164,8 +236,8 @@ form .pagina .btns button.adelante{
 }
 
 .progress-bar .paso .num.num.active{
-    border-color:   rgb(248, 191, 84);
-    background:  rgb(248, 191, 84);
+    border-color:  rgb(16, 167, 227);
+    background:  linear-gradient(rgb(16, 167, 227),rgb(137, 210, 239));
 }
 
 .progress-bar .paso .num span{
@@ -213,7 +285,7 @@ form .pagina .btns button.adelante{
 
 /*animacion de progress bar*/
 .progress-bar .paso .num.active:after{
-    background-color: orange;
+    background-color:rgb(16, 167, 227);
     animation: mov_Linea 0.3s linear forwards;
     transform: scaleX(0);
     transform-origin: left;
@@ -247,7 +319,7 @@ form .pagina .btns button.adelante{
     align-items: center;
     z-index: 9999;
 }
-  
+
 .modal-contenido {
     background-color: white;
     border-radius: 10px;
@@ -255,17 +327,17 @@ form .pagina .btns button.adelante{
     text-align: center;
     max-width: 400px;
 }
-  
+
 .modal-contenido h3 {
     margin-top: 0;
 }
-  
+
 .modal-botones {
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
-  
+
 .modal-botones button {
     padding: 10px 20px;
     margin: 0 10px;
@@ -274,9 +346,7 @@ form .pagina .btns button.adelante{
     font-size: 16px;
     cursor: pointer;
 }
-  
+
 .modal-botones button:focus {
     outline: none;
 }
-  
- 

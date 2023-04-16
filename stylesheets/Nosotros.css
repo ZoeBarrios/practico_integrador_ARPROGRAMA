@@ -11,6 +11,13 @@ body {
   background-color: #D3EAFD;
 
 }
+.navbar{
+  height: 90px;
+}
+
+.navbar ul{
+  margin-bottom: 40px;
+}
 
 .contenedor {
   max-width: 960px;
@@ -140,7 +147,6 @@ section a:hover {
   left: 0px;
   top: 1000px;
   width: 100%;
- 
 }
 
 

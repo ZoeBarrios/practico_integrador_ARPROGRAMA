@@ -61,18 +61,21 @@ btn_adelante2.addEventListener("click", function(e){
       document.getElementById("apellido").style.borderColor="lightgrey"      
     }
   }else{
+
     movPag.style.marginLeft = "-40%";
     num[cont - 1].classList.add("active");
     progressText[cont - 1].classList.add("active");
     progressCheck[cont - 1].classList.add("active");
     cont += 1;
+
+    document.getElementById("nombres-error").innerHTML = ""
+    document.getElementById("nombres").style.borderColor="lightgrey"
+    document.getElementById("apellido-error").innerHTML = ""
+    document.getElementById("apellido").style.borderColor="lightgrey"
   
 
     var aux = nombre + ", " + apellido1;
     newUser = aux.toUpperCase();
-
-   
-
   }
 
   function verificarNombre($n){
