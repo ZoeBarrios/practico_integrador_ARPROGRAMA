@@ -95,93 +95,155 @@ body{
     border: 1px solid lightgray;
 }
 
+/*botones*/
 .btns{
     padding-top: 15px;
 }
-
-/*neon botton*/
-.btn-neon{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    color: rgb(255, 255, 255);
+.button {
+    width: 350px;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
     letter-spacing: 5px;
-    font-size: 24px;
-    text-decoration: none;
-    overflow: hidden;
-    transition: 0.25;
+    text-transform: uppercase;
+    color: #3faff4;;
+    transition: all 1000ms;
     font-size: 15px;
-    border-radius: 3px;
-    background: linear-gradient(black,rgb(44, 43, 43));
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid #bfc1c2;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
 }
 
-.btn-neon:hover{
-    background: linear-gradient(black,rgb(44, 43, 43));
-    box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px  rgb(8, 197, 245), 0 0 10px rgb(0, 202, 252);
-    transition-delay: 1s;
-    border: 1px solid whitesmoke;
+button:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
+    outline: 2px solid #3faff4;;
+    box-shadow: 4px 5px 17px -4px #3faff4;;
 }
 
-.btn-neon span{
+button::before {
+    content: "";
     position: absolute;
-    display: block;
-}
-
-#span1{
+    left: -50px;
     top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg,transparent,rgb(16, 167, 227));
-}
-
-.btn-neon:hover  #span1{
-    left: 100%;
-    transition: 0.5s;
-}
-
-#span3{
-    bottom: 0%;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg,transparent,rgb(16, 167, 227));
-}
-
-.btn-neon:hover  #span3{
-    right: 100%;
-    transition: 0.5s;
-    transition-delay: 0.5s;
-}
-
-#span2{
-    top: -100%;
-    right: 0%;
-    width: 2px;
+    width: 0;
     height: 100%;
-    background: linear-gradient(180deg,transparent,rgb(16, 167, 227));
+    background-color: #3faff4;;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
 }
 
-.btn-neon:hover  #span2{
-    top: 100%;
-    transition: 0.5s;
-    transition-delay: 0.25s;
+button:hover::before {
+    width: 250%;
 }
 
-#span4{
-    bottom: -100%;
-    left: 0%;
-    width: 2px;
+/*BOTON DE ATRAS 1*/
+.buttonAtras1 {
+    width: 160px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #3faff4;;
+    transition: all 1000ms;
+    font-size: 10px;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid #bfc1c2;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+button:hover {
+    color: rgb(255, 255, 255);
+    outline: 2px solid #3faff4;;
+    box-shadow: 4px 5px 17px -4px #3faff4;;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
     height: 100%;
-    background: linear-gradient(360deg,transparent,rgb(16, 167, 227));
+    background-color: #3faff4;;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
 }
 
-.btn-neon:hover  #span4{
-    bottom: 100%;
-    transition: 0.5s;
-    transition-delay: 0.75s;
+button:hover::before {
+    width: 250%;
 }
+
+/*BOTON DE SIGUIENTE 1*/
+.buttonAdelante1 {
+    width: 170px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #3faff4;;
+    transition: all 1000ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid #bfc1c2;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+button:hover {
+    color: rgb(255, 255, 255);
+    outline: 2px solid #3faff4;;
+    box-shadow: 4px 5px 17px -4px #3faff4;;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #3faff4;;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+}
+
+button:hover::before {
+    width: 250%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*botones de pag 2 y 3*/
 .form-princ form .pagina .btns button{
