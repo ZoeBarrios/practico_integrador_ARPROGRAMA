@@ -12,13 +12,6 @@
 </head>
 
 <body>
-<!---  
-    <script>
-        if (localStorage.getItem("nombre")) {
-            window.location.href = "../Paginas/CrearTarjeta.html";
-        }
-    </script>
--->
 
     <!----------------------- Main Container -------------------------->
 
@@ -89,10 +82,13 @@
         const nombre = document.getElementById('nombre').value
         const apellido = document.getElementById('apellido').value
 
+        console.log(nombreGuardado, nombre)
         if (nombreGuardado === undefined) {
             alert('No encontramos una tarjeta con sus datos')
         } else if (nombre.toLowerCase() === nombre.toLowerCase() && apellido.toLowerCase() === apellidoGuardado.toLowerCase()) {
             window.location.href = '../Paginas/CrearTarjeta.html'
+        } else {
+            alert('No encontramos una tarjeta con sus datos')
         }
 
 
