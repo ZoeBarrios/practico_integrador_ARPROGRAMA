@@ -45,7 +45,7 @@ body{
 }
 
 .form-princ form .pagina{
-    width: 40%;
+    width: 39.5%;
     transition: margin-left 0.5s ease-in-out;
     padding-left: 10px;
 }
@@ -99,8 +99,8 @@ body{
 .btns{
     padding-top: 15px;
 }
-.button {
-    width: 350px;
+.button1 {
+    width: 300px;
     padding: 1em 2em;
     border: none;
     border-radius: 5px;
@@ -116,17 +116,17 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 10px;
+    margin-left: 25px;
 }
 
-button:hover {
+.button1:hover {
     color: rgb(255, 255, 255);
     transform: scale(1.1);
     outline: 2px solid #3faff4;;
     box-shadow: 4px 5px 17px -4px #3faff4;;
 }
 
-button::before {
+.button1::before {
     content: "";
     position: absolute;
     left: -50px;
@@ -139,7 +139,7 @@ button::before {
     transition: width 1000ms;
 }
 
-button:hover::before {
+.button1:hover::before {
     width: 250%;
 }
 
@@ -163,13 +163,14 @@ button:hover::before {
     height: 50px;
 }
 
-button:hover {
+.buttonAtras1:hover {
     color: rgb(255, 255, 255);
+    transform: scale(1.1);
     outline: 2px solid #3faff4;;
     box-shadow: 4px 5px 17px -4px #3faff4;;
 }
 
-button::before {
+.buttonAtras1::before {
     content: "";
     position: absolute;
     left: -50px;
@@ -182,9 +183,10 @@ button::before {
     transition: width 1000ms;
 }
 
-button:hover::before {
+.buttonAtras1:hover::before {
     width: 250%;
 }
+
 
 /*BOTON DE SIGUIENTE 1*/
 .buttonAdelante1 {
@@ -204,16 +206,15 @@ button:hover::before {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
-
-button:hover {
+.buttonAdelante1:hover {
     color: rgb(255, 255, 255);
+    transform: scale(1.1);
     outline: 2px solid #3faff4;;
     box-shadow: 4px 5px 17px -4px #3faff4;;
 }
 
-button::before {
+.buttonAdelante1::before {
     content: "";
     position: absolute;
     left: -50px;
@@ -226,22 +227,100 @@ button::before {
     transition: width 1000ms;
 }
 
-button:hover::before {
+.buttonAdelante1:hover::before {
+    width: 250%;
+}
+
+
+/*BOTON ATRAS 2*/
+.buttonAtras2 {
+    width: 160px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #3faff4;;
+    transition: all 1000ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid #bfc1c2;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonAtras2:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
+    outline: 2px solid #3faff4;;
+    box-shadow: 4px 5px 17px -4px #3faff4;;
+}
+
+.buttonAtras2::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #3faff4;;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+}
+
+.buttonAtras2:hover::before {
     width: 250%;
 }
 
 
 
+/*BOTON ENVIAR*/
+.enviar {
+    width: 170px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #3faff4;;
+    transition: all 1000ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid #bfc1c2;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.enviar:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
+    outline: 2px solid #3faff4;;
+    box-shadow: 4px 5px 17px -4px #3faff4;;
+}
 
+.enviar::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #3faff4;;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+}
 
-
-
-
-
-
-
-
+.enviar:hover::before {
+    width: 250%;
+}
 
 
 
@@ -257,7 +336,7 @@ form .pagina .btns button.volver{
 }
 
 form .pagina .btns button.adelante{
-    margin-left: 3px;
+    margin-left: 17px;
 }
 
 /*Barra de progreso*/

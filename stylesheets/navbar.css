@@ -10,8 +10,12 @@ header{
 }
 
 .nombreDeCarta{
-    color: rgb(251, 251, 251);
+    color: rgb(241, 241, 241);
     font-family: 'Roboto Condensed', sans-serif;
+}
+
+.tituloLogo{
+    color: aliceblue;
 }
 
 .navbar-brand img {
@@ -43,7 +47,6 @@ header{
     font-size: 17px;
 }
 
-
 .navBar ul li::before{
     content: "";
     width: 0%;
@@ -63,4 +66,3 @@ header{
 .navBar ul li:hover{
     scale: 1.1;
 }
-
