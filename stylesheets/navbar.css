@@ -1,8 +1,13 @@
 header{
-    font-family: 'Roboto', sans-serif;}
+    font-family: 'Roboto', sans-serif;
+}
 
 .bg-blue{
     background:url(https://static.vecteezy.com/system/resources/previews/005/201/039/non_2x/modern-luxury-abstract-3d-elegant-black-gradient-wave-shape-layered-background-and-texture-vector.jpg);
+}
+
+.hamburguesa{
+    background:linear-gradient(rgb(178, 176, 176),rgb(251, 251, 251));
 }
 
 .navbar{
