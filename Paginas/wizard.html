@@ -142,7 +142,7 @@
     event.preventDefault();
     const nombre = localStorage.getItem('nombre')
     const apellido = localStorage.getItem('apellido')
-    const sexo = localStorage.getItem('sexo') === 1 ? "Masculino" : "Femenino"
+    const sexo = localStorage.getItem('sexo') == 0 ? "Masculino" : "Femenino"
     const fNact = localStorage.getItem('fechaNac')
     Swal.fire({
       title: '¿Está seguro de que los datos son correctos?',
