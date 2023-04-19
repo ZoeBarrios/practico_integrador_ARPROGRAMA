@@ -1,25 +1,25 @@
-header{
+header {
     font-family: 'Roboto', sans-serif;
 }
 
-.bg-blue{
-    background:url(https://static.vecteezy.com/system/resources/previews/005/201/039/non_2x/modern-luxury-abstract-3d-elegant-black-gradient-wave-shape-layered-background-and-texture-vector.jpg);
+.bg-blue {
+    background: url(https://static.vecteezy.com/system/resources/previews/005/201/039/non_2x/modern-luxury-abstract-3d-elegant-black-gradient-wave-shape-layered-background-and-texture-vector.jpg);
 }
 
-.hamburguesa{
-    background:linear-gradient(rgb(178, 176, 176),rgb(251, 251, 251));
+.hamburguesa {
+    background: linear-gradient(rgb(178, 176, 176), rgb(251, 251, 251));
 }
 
-.navbar{
+.navbar {
     box-shadow: 0 2px 4px #393a3a;
 }
 
-.nombreDeCarta{
+.nombreDeCarta {
     color: rgb(241, 241, 241);
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.tituloLogo{
+.tituloLogo {
     color: aliceblue;
 }
 
@@ -27,7 +27,7 @@ header{
     max-height: 50px;
 }
 
-.navBar ul{
+.navBar ul {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -36,38 +36,39 @@ header{
     height: 80px;
 }
 
-.navBar ul li{
+.navBar ul li {
     position: relative;
 }
-.navBar ul li .Link{
+
+.navBar ul li .Link {
     display: inline-block;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-size:18px;
+    font-size: 18px;
     text-shadow: 2px 1px rgb(60, 60, 60);
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.navBar ul li .Link{
+.navBar ul li .Link {
     font-size: 17px;
 }
 
-.navBar ul li::before{
+.navBar ul li::before {
     content: "";
     width: 0%;
     height: 2px;
-    background:#3faff4;
+    background: #3faff4;
     position: absolute;
     left: 0;
     margin-bottom: 10px;
     bottom: -3px;
-    transition: 0.4s  ease-out;
+    transition: 0.4s ease-out;
 }
 
-.navBar ul li:hover::before{
+.navBar ul li:hover::before {
     width: 100%;
 }
 
-.navBar ul li:hover{
+.navBar ul li:hover {
     scale: 1.1;
 }
