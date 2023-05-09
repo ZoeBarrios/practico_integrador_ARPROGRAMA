@@ -11,6 +11,12 @@
     gap: 2em;
 }
 
+.card{
+    width: 50%!important; 
+    height: 15rem!important;
+}
+
+
 button {
     background: #f67b3e;
     font-family: inherit;
@@ -30,4 +36,10 @@ button:hover {
 button:active {
     transform: translate(0.05em, 0.05em);
     box-shadow: 0.05em 0.05em;
+}
+
+@media (max-width:700px){
+    .card{
+        width: 100%!important;
+    }
 }
