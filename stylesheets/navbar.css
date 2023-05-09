@@ -1,17 +1,13 @@
 header {
     font-family: 'Roboto', sans-serif;
-}
-
-.bg-blue {
     background: url(https://static.vecteezy.com/system/resources/previews/005/201/039/non_2x/modern-luxury-abstract-3d-elegant-black-gradient-wave-shape-layered-background-and-texture-vector.jpg);
+    box-sizing: border-box;
 }
 
-.hamburguesa {
-    background: linear-gradient(rgb(178, 176, 176), rgb(251, 251, 251));
-}
 
 .navbar {
     box-shadow: 0 2px 4px #393a3a;
+    width: 100%;
 }
 
 .nombreDeCarta {
@@ -30,10 +26,10 @@ header {
 .navBar ul {
     display: flex;
     align-items: center;
+    flex-direction: row;
     justify-content: space-evenly;
     list-style: none;
-    width: 600px;
-    height: 80px;
+    gap: 2em;
 }
 
 .navBar ul li {
@@ -58,7 +54,6 @@ header {
     width: 0%;
     height: 2px;
     background: #3faff4;
-    position: absolute;
     left: 0;
     margin-bottom: 10px;
     bottom: -3px;
@@ -71,4 +66,22 @@ header {
 
 .navBar ul li:hover {
     scale: 1.1;
+}
+
+@media (max-width:800px){
+    .navBar {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:600px){
+    .navBar{
+        margin: 0;
+    }
+    .navBar ul{
+        flex-direction: column;
+    }
 }
