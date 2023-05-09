@@ -3,6 +3,14 @@
     box-shadow: 50px;
 }
 
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
 button {
     background: #f67b3e;
     font-family: inherit;
